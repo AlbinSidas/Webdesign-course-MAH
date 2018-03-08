@@ -1,0 +1,245 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Table med artister </title>
+		<style>
+			table, th, td {
+    		border: 1px solid black;
+    		text-align:center;
+			}
+		</style>
+		<!--då w3c simulatorn bråkade med kodstycket align="center" och även border fick jag göra mitt första försök nu med
+		CSS. CSS bestämmer här inom <style> att table, th och td ska ha 1 pixel tjock svart ram och att all text skall
+		vara centrerad i alla celler. -->
+	</head>
+
+	<body>
+		<a id="Top"> </a>
+		<h1> Samling av House musik från Sverige, Australien och USA. </h1>
+		<nav> 
+		<!-- Navigationslista för att navigera på hemsidan -->
+			<h3> Snabbmeny till de olika nationaliteterna: </h3>
+			<ul>
+				<li><a href="#Sverige"> Svenska grupper </a></li>
+				<li><a href="#USA"> Amerikanska grupper </a></li>
+				<li><a href="#Australien"> Australiensiska grupper </a></li>
+			</ul>
+		</nav>
+		
+		<table>
+			<caption> <h2> Inläming uppgift 2 </h2></caption>
+			<thead>
+				<tr>
+					<th> Omslagsbild/Album  </th>
+					<th> Grupp</th>
+					<th> Gruppmedlemmar </th>
+					<th> Senate albumet </th>
+					<th> Land </th>
+					<th> Mer information </th>
+				</tr>
+			</thead>
+			<!-- thead används för att kunna låsa titlarna med hjälp av css i framtiden och just nu för att låsa dem vid huvudet på table. -->
+			
+			<tbody>
+				<tr> 
+					<td> 
+						<a id="Sverige"> </a>
+						<!-- här använder jag id attributen för att visa var man ska hamna när man använder
+						navigationslistan högst upp på sidan. Trycker man på Sverige där uppe hamnar man här. -->
+						
+						<a target="_blank" href="https://open.spotify.com/artist/1h6Cn3P4NGzXbaXidqURXs"> 
+							<img src="swedish_house_maffia.gif" height="100" width="180" alt="Länk till SHMs spotify"> 
+						</a> 
+						<!-- Jag slöt in bilden i en länk till deras spotify, ifall man trycker på bilden kommer man dit. -->
+						
+					</td>
+					<td> Swedish House Mafia </td>
+					<td> Axwell, Sebastian Ingrosso <br> och Steve Angello. </td>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/album/4ljisoNarj0BpQSMIEv88L"> Until Now </a>
+					</td>
+					<td> Sverige </td>
+					<td> 
+						<a target="_blank" href="https://sv.wikipedia.org/wiki/Swedish_House_Mafia"> Wikipedia <br> Swedish House Mafia </a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/artist/1xNmvlEiICkRlRGqlNFZ43">
+							<img src="axwell.gif" height="100" width="180" alt="Länk till Axwells spotify">
+						</a>
+					</td>
+					<td> Axwell </td>
+					<td> Axel Hedfors</td>
+					<td>
+						<a target="_blank" href="https://open.spotify.com/album/7bchrFZj39dzXln8iE6tBE"> More than you know </a> 
+					</td>
+					<td> Sverige </td>
+					<td> 
+						<a target="_blank" href="https://sv.wikipedia.org/wiki/Axwell"> Wikipedia <br> Axwell</a> 
+					</td>
+				</tr>
+			
+				<tr>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/artist/4AVFqumd2ogHFlRbKIjp1t">
+							<img src="Alesso.gif" height="100" width="180" alt="Länk till Alessos spotify">
+						</a>
+					</td>
+					<td> Alesso</td>
+					<td> Alessandro Rodolfo</td>
+					<td>
+							<a target="_blank" href="https://open.spotify.com/album/3yqh9ozOA2cAgPUJaveAuG"> Forever </a> 
+					</td>
+					<td> Sverige </td>
+					<td> 
+						<a target="_blank" href="https://sv.wikipedia.org/wiki/Alesso"> Wikipedia Alesso </a> 
+					</td>
+				</tr>
+				
+				<tr>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/artist/6hyMWrxGBsOx6sWcVj1DqP">
+							<img src="ingrosso.gif" height="100" width="180" alt="Länk till Ingrossos spotify">
+						</a>
+					</td>
+					<td> Ingrosso </td>
+					<td> Sebastian Ingrosso</td>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/album/7bchrFZj39dzXln8iE6tBE"> More Than You Know </a>
+					</td>
+					<td> Sverige </td>
+					<td> 
+						<a target="_blank" href="https://sv.wikipedia.org/wiki/Sebastian_Ingrosso">Wikipedia <br> Ingrosso </a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6">
+							<img src="Avicci.gif" height="100" width="180" alt="Länk till Aviccis spotify">
+						</a>
+					</td>
+					<td> Avicii</td>
+					<td> Tim Lidén </td>
+					<td>
+						<a target="_blank" href="https://open.spotify.com/album/5ttIIMPWCp2bvwsdAPcEXC"> Stories </a>  
+					</td>
+					<td> Sverige </td>
+					<td> 
+						<a target="_blank" href="https://sv.wikipedia.org/wiki/Avicii"> Wikipedia Avicci </a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<a id="USA"></a>	
+						<a target="_blank" href="https://open.spotify.com/artist/5he5w2lnU9x7JFhnwcekXX">
+							<img src="skrillex.gif" height="100" width="180" alt="Länk till Skrillex spotify">
+						</a>
+					</td>
+					<td> Skrillex </td>
+					<td> Sonny Moore</td>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/album/6bfkwBrGYKJFk6Z4QVyjxd">Skrillex and Diplo present Jack Ü</a> 
+					</td>
+					<td> USA </td>
+					<td> 
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Skrillex"> Wikipedia <br> Skrillex</a> 
+					</td>
+				</tr>
+			
+				<tr>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/artist/5fMUXHkw8R8eOP2RNVYEZX">
+							<img src="diplo.gif" height="100" width="180" alt="Länk till Diplos spotify">
+						</a>
+					</td>
+					<td> Diplo</td>
+					<td> Thomas Pentz</td>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/album/6bfkwBrGYKJFk6Z4QVyjxd"> Skrillex and Diplo present Jack Ü </a>
+					</td>
+					<td> USA </td>
+					<td> 
+						<a target="_blank" href="https://sv.wikipedia.org/wiki/Diplo"> Wikipedia <br> Diplo</a> 
+					</td>
+				</tr>
+				
+				<tr>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/artist/3534yWWzmxx8NbKVoNolsK">
+							<img src="https://www.edmsauce.com/wp-content/uploads/2017/07/Wolfgang-Gartner-press-2016-billboard-650.jpg" height="100" width="180" alt="Länk till Wolfgang Gartner på spotify">
+						</a>
+					</td>
+					<td> Wolfgang Gartner </td>
+					<td> Joseph Youngman </td>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/album/2LM2ZSYCEdKutm6qJTEjPF"> 10 ways to steal <br> home plate</a>
+					</td>
+					<td> USA </td>
+					<td> 
+						<a target="_blank" href=""> Wikipedia <br> Wolfgang Gartner </a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td> 
+						<a id="Australien"></a>
+						<a target="_blank" href="https://open.spotify.com/artist/4Jv9I6DAbcjDa8HGFAjv94">
+					 	<img src="main_fit_300.png" height ="100" width="180" alt="Länk till The aston shuffle´s spotify">
+						</a>
+					</td>
+					<td> The Aston Shuffle</td>
+					<td> Mikah Freeman och Vance Musgrove</td>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/album/3wVwKve7KcWJx18OYfwkwj">Photographs</a>
+					</td>
+					<td> Australien </td>
+					<td> 
+						<a target="_blank" href="https://en.wikipedia.org/wiki/The_Aston_Shuffle"> Wikipedia <br> The Aston Shyffle</a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/artist/5WmZv7J9YS32QrEoAOE3yq">
+							<img src="Infusion_sml.jpg" height="100" width="180" alt="Länk till Infusions spotify">
+						</a>
+					</td>
+					<td> Infusion </td>
+					<td> Manuel Sharrad, Jamie Stevens och <br> Frank Xavier. </td>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/album/6PX9BPiLZk5jKSvtMjU4Zc">Summer und so</a>
+					</td>
+					<td> Australien </td>
+					<td> 
+						<a target="blank" href="https://en.wikipedia.org/wiki/Infusion_(band)"> Wikipedia <br> Infusion </a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<a target="_blank" href="https://open.spotify.com/artist/7MqnCTCAX6SsIYYdJCQj9B">
+							<img src="pendulum_symbol_name_background_font_3715_2048x2048.jpg" height="100" width="180" alt="Länk till Pendulums spotify"> 
+						</a>
+					</td>
+					<td> Pendulum </td>
+					<td> 
+						Rob Swire, Gareth McGrillen, Perry ap Gwynedd,<br> Paul Harding, Kevin Joseph Sawka och Ben Mount.
+					</td>
+					<td> 
+						<a target="_blank" href="https://open.spotify.com/album/3XtEGVx9uh7J46nBzEc1VS"> Immersion </a>
+					</td>
+					<td> Australien</td>
+					<td> 
+						<a target="_blank" href="https://sv.wikipedia.org/wiki/Pendulum"> Wikipedia <br> Pendulum </a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<a href="#Top"> Klicka här för att återgå till toppen av sidan </a>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Blomstermålabladet undersökning</title>
+	<style>
+		form{
+		border-style: groove;
+		border-radius: 5px;
+		margin-top: 25px;
+		margin-right: 600px;
+		}
+		/*  För att snygga till och positionera form */
+		
+		.changetextarea{
+ 		width:300px;
+ 		height:75px;
+ 		margin-bottom:10px;
+		}
+		/* Klass för att göra textboxarna större */
+	</style>
+</head>
+<body>
+	<h1> Blomstermålabladet Frågeformulär</h1>
+	
+	<form target="_blank" action="http://webshare.mah.se/tszagh/response.php" method="get">
+		<fieldset>
+			<legend> Kontaktuppgifter: </legend>
+			Namn:<input type="text" name="fullname" placeholder="Hela ditt namn..." required>
+			<br>
+			Ålder:<input type="number" name="age" placeholder="Ålder med siffror" required>
+		</fieldset>
+
+		<fieldset>
+			<legend> Dina besök på blomstermålabladet</legend>
+			<p> Hur ofta besöker du blomstermålabladet?
+			<br>
+			<input type="radio" name="visiting_frequency" value="varjedag" required> Varje dag
+			<br>
+			<input type="radio" name="visiting_frequency" value="varannandag" required> Varannan dag
+			<br>
+			<input type="radio" name="visiting_frequency" value="varjevecka" required> Varje vecka
+			
+			<p> Vilka delar av blomstermålabladet brukar du besöka?</p>
+			<input type="checkbox" name="news"> Nyheter
+			<br>
+			<input type="checkbox" name="foreign_news"> Utrikes
+			<br>
+			<input type="checkbox" name="national_news"> Inrikes
+			<br>
+			<input type="checkbox" name="sports"> Sport
+			<br>
+			<input type="checkbox" name="gossip"> Skvaller
+			<br>
+			<input type="checkbox" name="weather"> Väder
+			<br>
+			<input type="checkbox" name="other_news"> Övrigt
+		</fieldset>
+		
+		<fieldset>
+			<legend> Vinn en T-shirt</legend>
+			<p> Ni har möjlighet att vinna en t-shirt om ni fyller i följande information! </p>
+			
+			Det bästa med blomstermålabladet:
+			<br>
+			<input type="text" name="Best" class="changetextarea">
+			<br>
+			
+			Det sämsta med blomstermålabladet:
+			<br>
+			<input type="text" name="Worst" class="changetextarea">
+			<br>
+			
+			E-post:<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="exempel@email.se">
+			<!-- här används pattern för att begränsa vad för bokstäver, siffror samt tecken som får användas. Pattern
+			säger också att ett @ måste användas och att det sedan också måste finnas en . följd av 2 eller tre 
+			bokstäver för att avsluta e-mailadressen. -->
+			<br>
+			Storlek:
+			<select name="t-shirt_size">
+				<option value="S"> S </option>
+				<option value="M"> M </option>
+				<option value="L"> L </option>
+				<option value="XL"> XL </option>
+			</select>
+		</fieldset>
+		
+		<fieldset>
+			<legend> Skicka/Återställ</legend>
+			<input type="submit" value="Skicka">
+			<input type="reset" value="Återställ">
+		</fieldset>
+	</form>
+</body>
+</html>
